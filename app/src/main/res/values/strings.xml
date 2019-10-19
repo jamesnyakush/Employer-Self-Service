@@ -3,4 +3,5 @@
     <string name="title_profile">Profile</string>
     <string name="title_claims">Claims</string>
     <string name="title_leave">Leave</string>
+    <string name="title_manager">manager</string>
 </resources>

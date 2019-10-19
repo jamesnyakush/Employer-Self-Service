@@ -23,7 +23,12 @@ android {
     }
 
 
-    dynamicFeatures = [":Profile", ":Claims", ":Leave"]
+    dynamicFeatures = [":Profile", ":Claims", ":Leave", ":Manager"]
+
+
+
+
+    
 
 
 

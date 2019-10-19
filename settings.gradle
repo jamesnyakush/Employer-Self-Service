@@ -1,2 +1,2 @@
-include ':app', ':Profile'
+include ':app', ':Profile', ':Claims'
 rootProject.name='EmployerSelfService'

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">EmployerSelfService</string>
     <string name="title_profile">Profile</string>
+    <string name="title_claims">Claims</string>
 </resources>

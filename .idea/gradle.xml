@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Claims" />
+            <option value="$PROJECT_DIR$/Labour" />
             <option value="$PROJECT_DIR$/Leave" />
             <option value="$PROJECT_DIR$/Manager" />
             <option value="$PROJECT_DIR$/Profile" />

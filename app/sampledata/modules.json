@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "Leave",
+      "drawableIcon": "@drawable/ic_wristwatch"
+    },
+    {
+      "name": "Claim",
+      "drawableIcon": "@drawable/ic_answer"
+    },
+    {
+      "name": "Labour",
+      "drawableIcon": "@drawable/ic_labor_woman"
+    },
+    {
+      "name": "Recruitment",
+      "drawableIcon": "@drawable/ic_job_seeker"
+    },
+    {
+      "name": "Manager",
+      "drawableIcon": "@drawable/ic_boss"
+    },
+    {
+      "name": "Profile",
+      "drawableIcon": "@drawable/ic_team"
+    }
+  ]
+}

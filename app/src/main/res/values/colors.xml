@@ -3,4 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+
+    <!--normal colors-->
+    <color name="darkTextColor">#020000</color>
+    <color name="underline_color">#8d8d8d</color>
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#2C3E50</color>
+    <color name="register_bk_color">#2C3E50</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#2C3E50</color>
 </resources>

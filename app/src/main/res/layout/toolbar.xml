@@ -11,6 +11,7 @@
         android:layout_height="?android:attr/actionBarSize"
         android:background="@android:color/transparent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_collapseMode="pin"
         app:theme="@style/toolbarColored">
 
         <RelativeLayout

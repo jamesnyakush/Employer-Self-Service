@@ -20,7 +20,7 @@ class Login : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.login_register -> {
-                startActivity(Intent(Login@ this, Register::class.java))
+                startActivity(Intent(Login@this, Register::class.java))
             }
             R.id.login_activity -> {
                 startActivity(Intent(Login@ this, MainActivity::class.java))

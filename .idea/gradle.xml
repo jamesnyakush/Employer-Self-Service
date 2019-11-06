@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/Profile" />
             <option value="$PROJECT_DIR$/Recruitment" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

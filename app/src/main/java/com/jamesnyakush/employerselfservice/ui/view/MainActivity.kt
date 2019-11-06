@@ -2,6 +2,8 @@ package com.jamesnyakush.employerselfservice.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import com.androidstudy.devfest19.utils.CustomGridLayoutManager
 import com.androidstudy.devfest19.utils.toast
 import com.google.android.play.core.splitinstall.SplitInstallManager
@@ -51,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                         if (splitInstallManager.installedModules.contains(LeaveModule)) {
                             startActivity(intentTo(Activities.LeaveModule.leave))
                         } else {
-                            toast("Music Module is not installed")
+                            toast("Leave Module is not installed")
                         }
                     }
                     //
@@ -59,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                         if (splitInstallManager.installedModules.contains(ClaimModule)) {
                             startActivity(intentTo(Activities.ClaimModule.claim))
                         } else {
-                            toast("News Module is not installed")
+                            toast("Claim Module is not installed")
                         }
                     }
                     //
@@ -67,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                         if (splitInstallManager.installedModules.contains(LabourModule)) {
                             startActivity(intentTo(Activities.LabourModule.labour))
                         } else {
-                            toast("Movie Module is not installed")
+                            toast("Labour Module is not installed")
                         }
                     }
 
@@ -76,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                         if (splitInstallManager.installedModules.contains(RecruitmentModule)) {
                             startActivity(intentTo(Activities.RecruitmentModule.recruitment))
                         } else {
-                            toast("Weather Module is not installed")
+                            toast("Recruitment Module is not installed")
                         }
                     }
 
@@ -84,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                         if (splitInstallManager.installedModules.contains(ManagerModule)) {
                             startActivity(intentTo(Activities.ManagerModule.manager))
                         } else {
-                            toast("Weather Module is not installed")
+                            toast("Manager Module is not installed")
                         }
                     }
 
@@ -92,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                         if (splitInstallManager.installedModules.contains(ProfileModule)) {
                             startActivity(intentTo(Activities.ProfilesModule.profiles))
                         } else {
-                            toast("Weather Module is not installed")
+                            toast("Profile Module is not installed")
                         }
                     }
 
@@ -144,5 +146,35 @@ class MainActivity : AppCompatActivity() {
             )
         )
         return models
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.profile -> {
+                toast("Profile Activity pressed")
+            }
+
+            R.id.preference -> {
+                toast("Preference pressed")
+
+            }
+
+            R.id.about_app -> {
+                toast("About App pressed")
+            }
+
+            R.id.logout -> {
+                toast("Log out pressed")
+            }
+
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

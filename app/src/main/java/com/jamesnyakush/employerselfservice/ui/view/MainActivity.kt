@@ -2,6 +2,8 @@ package com.jamesnyakush.employerselfservice.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import com.androidstudy.devfest19.utils.CustomGridLayoutManager
 import com.androidstudy.devfest19.utils.toast
 import com.google.android.play.core.splitinstall.SplitInstallManager
@@ -12,6 +14,7 @@ import com.jamesnyakush.employerselfservice.ui.model.DynamicModule
 import com.jamesnyakush.employerselfservice.utils.Activities
 import com.jamesnyakush.employerselfservice.utils.Constants
 import com.jamesnyakush.employerselfservice.utils.intentTo
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         splitInstallManager = SplitInstallManagerFactory.create(this)
-
+        setSupportActionBar(toolbar)
         setup()
     }
 
@@ -144,5 +147,14 @@ class MainActivity : AppCompatActivity() {
             )
         )
         return models
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return super.onOptionsItemSelected(item)
     }
 }

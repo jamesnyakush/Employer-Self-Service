@@ -14,6 +14,7 @@ import com.jamesnyakush.employerselfservice.ui.model.DynamicModule
 import com.jamesnyakush.employerselfservice.utils.Activities
 import com.jamesnyakush.employerselfservice.utils.Constants
 import com.jamesnyakush.employerselfservice.utils.intentTo
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         splitInstallManager = SplitInstallManagerFactory.create(this)
-
+        setSupportActionBar(toolbar)
         setup()
     }
 
@@ -149,11 +150,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.main,menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
 
         when (item.itemId) {
             R.id.profile -> {

@@ -150,17 +150,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-<<<<<<< HEAD
         menuInflater.inflate(R.menu.main,menu)
-=======
-        menuInflater.inflate(R.menu.menu, menu)
->>>>>>> bbc2790d14522389d79f4afe4b8923f5c874b11d
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-<<<<<<< HEAD
-=======
+
 
         when (item.itemId) {
             R.id.profile -> {
@@ -182,7 +177,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
->>>>>>> bbc2790d14522389d79f4afe4b8923f5c874b11d
         return super.onOptionsItemSelected(item)
     }
 }

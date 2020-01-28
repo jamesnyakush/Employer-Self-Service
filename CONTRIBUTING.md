@@ -1,4 +1,3 @@
-yes
 
 # Contributing
 

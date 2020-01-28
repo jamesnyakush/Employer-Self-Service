@@ -1,3 +1,4 @@
+
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
@@ -90,4 +91,3 @@ available at [http://contributor-covenant.org/version/1/4][version]
 
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
-
